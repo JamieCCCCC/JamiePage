@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#218868" >
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#218868"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/image_bg"
+            android:background="#DBDBDB" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/nv_username"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#88C9C9C9"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="Username"
+            android:textSize="20dp"
+            android:layout_below="@id/image_bg" />
+        <TextView
+            android:id="@+id/nv_level"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#88C9C9C9"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="Level"
+            android:textSize="20dp"
+            android:layout_below="@id/nv_username"/>
+        <TextView
+            android:id="@+id/nv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#88C9C9C9"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:layout_below="@id/nv_level"/>
+        <TextView
+            android:id="@+id/nv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#88C9C9C9"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="Total Distance"
+            android:textSize="20dp"
+            android:layout_below="@id/nv_gender"/>
+        <TextView
+            android:id="@+id/nv_time"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#88C9C9C9"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="Total Time"
+            android:textSize="20dp"
+            android:layout_below="@id/nv_distance"/>
+        <TextView
+            android:id="@+id/nv_about"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="210dp"
+            android:text="About Us"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/nv_logout"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Log Out"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C9C9C9">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/setting"
+            android:onClick="Setting" />
+        <com.example.jamie.myapp.ProgressBarView
+            android:id="@+id/progressbar"
+            android:background="#C9C9C9"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="150dp"
+            android:layout_width="500dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/button" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/progressbar"
+            android:layout_marginTop="-200dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/btn_radius"
+            android:onClick="Run"
+            android:textSize="20dp"
+            android:text="RUN"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/progressbar" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/figure"
+            android:onClick="figure"
+            android:layout_below="@+id/button1" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/mission"
+            android:onClick="mission"
+            android:layout_below="@+id/button1" />
+    </RelativeLayout>
+</android.support.v4.widget.SlidingPaneLayout>
