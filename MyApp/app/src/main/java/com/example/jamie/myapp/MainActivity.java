@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent i = new Intent(MainActivity.this, MissionActivity.class);
                 startActivity(i);
+                finish();
             }
         });
         models = (Button)findViewById(R.id.button3);
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent j = new Intent(MainActivity.this, FigureActivity.class);
                 startActivity(j);
+                finish();
             }
         });
         run = (Button)findViewById(R.id.button1);
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent v = new Intent(MainActivity.this, RunActivity.class);
                 startActivity(v);
+                finish();
             }
         });
     }
